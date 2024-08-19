@@ -62,8 +62,10 @@ console.log(dress(temperature1,isRainingT));
 // 4 - Funcion
 // calculate(operation, firstOperator, secondOperator)
 
+
 // 5 - Funcion
 // eating(name, foods['🍔','🍟','🍗',])
+
 
 // 6 - Funcion
 // finalCountDown(count)
@@ -77,6 +79,33 @@ console.log(dress(temperature1,isRainingT));
 // 75-84 => BMB
 // 85-96 => MB
 // 97-100 => S
+
+function getGrade(score){
+    if (score >= 97){
+        return "S";
+    }
+    if (score >= 85){
+        return "MB";
+    }
+    if (score >= 75){
+        return "BMB";
+    }
+    if (score >= 61){
+        return "B";
+    }
+    if (score >= 41){
+        return "R";
+    }
+    else {
+        return "D";
+    }
+}
+console.log("Tu nota es: ",getGrade(98));
+console.log("Tu nota es: ",getGrade(86));
+console.log("Tu nota es: ",getGrade(76));
+console.log("Tu nota es: ",getGrade(62));
+console.log("Tu nota es: ",getGrade(42));
+console.log("Tu nota es: ",getGrade(1));
 
 // 8 - Funcion
 // fillCart(person, articlesCollection)
